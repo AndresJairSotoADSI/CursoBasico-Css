@@ -1,0 +1,23 @@
+
+*{
+    padding: 0;
+    box-sizing:0;
+    box-sizing: 0;
+}
+body{
+    color:rgb(255, 251, 251);
+}
+.container {
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    background: rgb(152, 89, 224);
+    margin: 10% auto;
+    padding: 40px;
+}
+.container p{
+    text-align: justify;
+}
+.lista{
+text-align: justify;
+}

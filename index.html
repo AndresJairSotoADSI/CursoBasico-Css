@@ -1,12 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/darkly/bootstrap.min.css"
+        integrity="sha512-8RiGzgobZQmqqqJYja5KJzl9RHkThtwqP1wkqvcbbbHNeMXJjTaBOR+6OeuoxHhuDN5h/VlgVEjD7mJu6KNQXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="css-3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>CursoBasico-Css</title>
 </head>
+
 <body>
-    
+
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h4>Selectores</h4>
+                    <hr>
+                    <p>
+                        ¿Qué son Selectores?
+                        Los selectores CSS son herramientas utilizadas para definir el estilo que quieres dar a tus
+                        elementos en CSS <br>
+                        Selectores de tipo, de clase y de ID , de atributo , Las pseudoclases y los pseudoelementos
+                        ,Combinadores
+                    </p>
+                    <hr>
+                    <p>h1{ } ,<br> .class{} ,<br> #id{} , <br>a[title] { } <br> a: hover {}, p::first-line { } , <br>
+                        article > p { }
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h4>Especifidad</h4>
+                    <hr>
+                    <p>
+                        ¿Qué es la especifidad?
+                        La especificidad en CSS es un grupo de reglas aplicadas a los selectores CSS para determinar qué
+                        estilo se aplica a un elemento. Cuanto más específico sea un selector, mayor será su valor en
+                        puntos y más probable será que esté presente en el estilo del elemento.
+                    </p>
+                    <hr>
+                    <p>*{box-sizing: border-box; },<br>p{font-size:3rem;},<br>.class{background:rgb(152, 89, 224);},<br>
+                        #id{} , <br>a[title] { } <br> a: hover {}, p::first-line { } ,
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h4>Metodología Bem</h4>
+                    <hr>
+                    <p>
+                        ¿Qué es la metodologia ben?
+                        El método BEM nos indica que cada elemento nace a partir de la clase del bloque que conforma
+                        seguida de dos guiones bajos y el nombre clave del elemento.
+                    </p>
+                    <hr>
+                    <p>.header__logo{filter: brightness(0.01); <br> .header__link{color: #2e2e2e;} <br>
+                        .header__link{color: #2e2e2e;} <br> .header__link{color: #2e2e2e;}
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h4>Unidades</h4>
+                    <hr>
+                    <p>
+                        ¿Qué son las unidads css?
+                        La unidad em hace referencia al tamaño en puntos de la letra que se está utilizando. Si se
+                        utiliza una tipografía de 12 puntos, 1em equivale a 12 puntos . El valor de 1ex se puede
+                        aproximar por 0.5 em . La regla CSS anterior indica que los párrafos deben mostrar un margen de
+                        anchura igual a 1em .
+                    </p>
+                    <hr>
+                    <p> p {font-size:32px ; margin:1em;} ,<br>p {font-size:32px; margin:0.5em;}, <br> h1
+                        {font-size:15px} <br> h1 {font-size:15rem} , <br> article > p { }
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Propiedades de texto</h5>
+                    <hr>
+                    <p>
+                        ¿Qué son las propiedad de texto?
+                        Se denominan propiedades de texto aquellas que afectan al texto en su conjunto. Estas
+                        propiedades permiten controlar la alineación del texto, el interlineado, la separación entre
+                        palabras, etc.
+                    </p>
+                    <hr>
+                    <p> <b>propiedad line-height</b><br><b>Propiedad text-align</b><br><b>propiedad
+                            line-height</b><br><b>propiedad line-height</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Tipografías externas</h5>
+                    <hr>
+                    <p>
+                        ¿Qué son las tipografias externas?
+                        ermite personalizar nuestra página web con aspectos tipográficos elegantes y atractivos, pero
+                        tiene una gran limitación: dependemos de que estén instaladas previamente en el sistema. Si
+                        usamos la propiedad font-family y especificamos el nombre de la tipografía a utilizar, en
+                        principio debería visualizarse. Sin embargo, si no existen, se mostrará con otra tipografía
+                        diferente.
+                    </p>
+                    <hr>
+                    <p> <b>propiedad line-height</b><br><b>Propiedad text-align</b><br><b>propiedad
+                            line-height</b><br><b>propiedad line-height</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Normalize</h5>
+                    <hr>
+                    <p>
+                        ¿Qué es Normalize?
+                        Normalize es un fichero CSS que apenas ocupa 8 KB, cuyo principal objetivo es mantener los
+                        estilos similares en los navegadores, ya que cada uno agrega sus propios estilos por defecto,
+                        por ejemplo te suelen agregar distintos paddings, margins, font-sizes,etc. Con Normalize CSS lo
+                        que hacemos es regularizarlos y que nuestra web se vea igual independientemente del navegador
+                        donde se visualice. Además está preparado para adaptarse completamente a HTML5.
+                    </p>
+                    <hr>
+                    <p> <b>propiedad line-height</b><br><b>Propiedad text-align</b><br><b>propiedad
+                            line-height</b><br><b>propiedad line-height</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Modelo de cajas</h5>
+                    <hr>
+                    <p>
+                        ¿Qué son el modelo de cajas?
+                        El modelo de cajas es la base del diseño web — cada elemento se representa como una caja
+                        rectangular, con su contenido, padding (espacio interior), borde y margen construidos uno sobre
+                        otro como las capas de una cebolla.
+                    </p>
+                    <hr>
+                    <p> <b>ul {border: 2px solid rebeccapurple;padding: .5em;}</b><br><b>.block,li {border: 2px solid
+                            blue;padding: .5em;}</b><br><b>ul {display: flex; list-style: none;}
+                        </b>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Padding</h5>
+                    <hr>
+                    <p>
+                        ¿Qué es el padding?
+                        La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un
+                        elemento. El área de padding es el espacio entre el contenido del elemento y su borde ( border
+                        ). No se permiten valores negativos
+                        <hr>
+                        <p> <b> padding: 5%; </b><br><b> padding: 10px; </b><br><b> padding: 10px 20px; </b><br><b>
+                                padding: 1em 3px 30px 5px;</b><br>
+                        </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Width y Height</h5>
+                    <hr>
+                    <p>
+                        <b>Height</b><br>
+                        La propiedad CSS height especifica la altura de un elemento. Por defecto, la propiedad define la
+                        altura del área de contenido. <br>
+                        <b>Width</b><br>
+                        El width atributo especifica el ancho del vídeo de salida, en píxeles.
+
+                    </p>
+                    <hr>
+                    <p> <b>height: 120px;</b><br><b>height: 10em;</b><br><b>width: 300px;</b><br><b>width: 25em;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Box Sizing</h5>
+                    <hr>
+                    <p>
+                        ¿Qué es Box Sizing?
+                        La propiedad box-sizing (tamaño de caja) establece como se calcula el ancho y alto total de un
+                        elemento. <br>
+                        La propiedad box-sizing tiene dos valores posibles: content-box y border-box.
+                    </p>
+                    <hr>
+                    <p> <b>html{box-sizing: border-box;}</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5> Margin</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es Margin </b> <br> ?
+                        La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para
+                        evitar tener que establecer cada lado por separado con las otras propiedades de margen
+                    </p>
+                    <hr>
+                    <p> <b>margin-top</b><br><b>margin-button</b><br><b>margin-right</b><br><b>margin-lef</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5> Borde</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué son los bordes en css </b> <br> ?
+                        CSS permite definir el aspecto de cada uno de los cuatro bordes horizontales y verticales de los
+                        elementos. Para cada borde se puede establecer su anchura, su color y su estilo
+                    </p>
+                    <hr>
+                    <p> <b>border-top-width: 10px;</b><br><b> border-right-width: 1em;</b><br><b> border-bottom-width:
+                            thick;</b><br><b> border-left-width: thin;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Box Model</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es un modelo de caja? </b> <br>
+                        Cada elemento HTML es una caja que podemos controlar en el espacio exterior con la propiedad
+                        margin, después, podemos darle un borde y con la propiedad padding, también podemos proporcionar
+                        los espacios interiores entre el contenido y el borde dentro de la caja.
+                    </p>
+                    <hr>
+                    <p> <b>border</b><br><b>padding</b><br><b>margin</b><br><b>margin-lef</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Box-shadomw</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es Box-shadomw?</b> <br>
+                        Añade efectos de sombra alrededor del marco de un elemento. Se pueden definir múltiples efectos
+                        separados por comas. La caja de la sombra se describe por los desplazamientos en X e Y, los
+                        radios de desenfoque y dispersión, y el color relativos al elemento.
+                    </p>
+                    <hr>
+                    <p> <b>box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);</b><br><b>text-shadow: 1px 1px 1px
+                            rgba(32,32,32,0.3);</b><br><b>box-shadow: none;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Outline</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es la propiedad outline? </b> <br>
+                        La propiedad CSS outline-style es usada para establecer el estilo del contorno de un elemento.
+                        Un contorno es una línea que se dibuja al rededor de elementos, fuera de los límites del borde,
+                        para resaltar un elemento
+                    </p>
+                    <hr>
+                    <p> <b>div { outline: 5px solid #369; }</b><br><b>div { outline: solid 1px #C00; }</b><br><b>div {
+                            outline: #C00 1px solid; }</b><br><b>div { outline: #C00 solid 1px; }</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Position</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es la propiedad position </b> <br> ?
+                        La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para
+                        evitar tener que establecer cada lado por separado con las otras propiedades de margen
+                    </p>
+                    <hr>
+                    <p> <b>position: static;</b><br><b>position: relative; </b><br><b>position:
+                            absolute;</b><br><b>position: sticky;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <h5>Position Relative</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es position relative?</b> <br>
+                        El valor relative en el atributo position indica que la capa sí forma parte del flujo normal de
+                        elementos de la página, por lo que su posición dependerá del lugar donde esté en el código y el
+                        flujo HTML
+                    </p>
+                    <hr>
+                    <p> <b>tyle="position: relative; background-color: #ff9;</b><br><b>position
+                            relative</b><br><b>margin-right</b><br><b>margin-lef</b>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Z-index</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es z-index?</b> <br>
+                        indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se
+                        superponen, los elementos con mayor valor z-index cubren aquellos con menor valor.
+                    </p>
+                    <hr>
+                    <p> <b>z-index: -1</b><br><b>z-index: -2</b><br><b>z-index: -3</b><br><b>z-index: -4</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Position absolute</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es position absolute?</b> <br>
+                        El valor absolute en el atributo position permite posicionar elementos de manera absoluta, esto
+                        es de manera definida por valores de los atributos top, left, bottom y right, que indican la
+                        distancia con respecto a un punto.
+                    </p>
+                    <hr>
+                    <p> <b>position:absolute;</b><br><b>position:absolute;</b><br><b>position:absolute;</b><br><b>position:absolute;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Position Fixed</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es Position Fixed?</b> <br>
+                        Este atributo sirve para posicionar una capa con posicionamiento absoluto, pero su posición
+                        final será siempre fija, es decir, aunque se desplace el documento con las barras de
+                        desplazamiento del navegador, siempre aparecerá en la misma posición.
+                    </p>
+                    <hr>
+                    <p> <b>position: fixed</b><br><b>position: fixed</b><br><b>position: fixed</b><br><b>position:
+                            fixed</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Position Sticky</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es position sticky?</b> <br>
+                        El posicionamiento sticky puede considerarse un híbrido de los posicionamientos relativo y fijo.
+                        Un elemento con posicionamiento sticky es tratado como un elemento posicionado relativamente
+                        hasta que cruza un umbral especificado.
+                    </p>
+                    <hr>
+                    <p> <b>position: sticky;</b><br><b>margin-button</b><br><b>position: sticky;</b><br><b>position:
+                            sticky;
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Display css</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es la propiedad Display?</b> <br>
+                        La propiedad CSS display especifica si un elemento es tratado como block or inline element y el
+                        diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible)
+                    </p>
+                    <hr>
+                    <p> <b>div{ display: block; }</b><br><b>span{ display: inline;}</b><br><b>div{ display:
+                            inline;}</b><br><b>span{display: block}</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Float</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es la propiedad Float</b> <br>
+                        La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor,
+                        permitiendo a los elementos de texto y en línea aparecer a su costado
+                    </p>
+                    <hr>
+                    <p> <b>float: left;</b><br><b>float: right;</b><br><b>float: inline-start;</b><br><b>float:
+                            inline-end;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Pseudoelementos</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es Pseudoelementos?</b> <br>
+                        los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial
+                        sino que, permiten añadir estilos a una parte concreta del documento.
+                    </p>
+                    <hr>
+                    <p> <b>::after;</b><br><b>::first-letter</b><br><b>::first-line</b><br><b>::placeholder</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5> Objet Fit</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es Objet Fit?</b> <br>
+                        indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video> , debería
+                            redimensionarse para ajustarse a su contenedor. Se puede alterar la alineación del contenido
+                            del elemento reemplazado utilizando la propiedad object-position .
+                    </p>
+                    <hr>
+                    <p> <b>object-fit: fill;</b><br><b>object-fit: cover;</b><br><b>object-fit:
+                            none;</b><br><b>object-fit: scale-down;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Object-position</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es object-position?</b> <br>
+                        La propiedad object-position determina el alineamiento del elemento dentro de la caja.
+                    </p>
+                    <hr>
+                    <p> <b>object-position: 100px 50px;</b><br><b>:object-position: inherit;</b><br><b>object-position:
+                            initial;</b><br><b>object-position: unset;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Cursor</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es la propiedad Cursor?</b> <br>
+                        La propiedad cursor no sólo permite seleccionar un puntero entre los disponibles en el sistema
+                        operativo (flecha, mano, reloj de arena, redimensionar, etc.) sino que incluso permite indicar
+                        la URL de una imagen que se quiere mostrar como puntero personalizado.
+                    </p>
+                    <hr>
+                    <p> <b>cursor: default</b><br><b>cursor: crosshair</b><br><b>cursor: pointe</b><br><b>cursor:
+                            move</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Colorización</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es la propiedad colores?</b> <br>
+                        Los colores en CSS se pueden indicar de cinco formas diferentes: palabras clave, colores del
+                        sistema, RGB hexadecimal, RGB numérico y RGB porcentual.
+                    </p>
+                    <hr>
+                    <p> <b>rgb()</b><br><b>rgba()</b><br><b>hsl()</b><br><b>hsla()</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Conceptos Básicos Responsive</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es responsividad?</b> <br>
+                        optimizar el código html y CSS (media queries) del diseño para que sea responsivo y se adapte,
+                        esta adaptación ya viene programada en la mayoría de los editores para que cualquier usuario
+                        tenga un diseño web profesional
+                    </p>
+                    <hr>
+                    <p> <b>Flexbox</b><br><b>display: flex;</b><br><b> display: grid;</b><br><b>::@media (max-width:
+                            600px)</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Menu Responsivo</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es un m,enu responsive?</b> <br>
+                        El diseño del menu responsive implica que las dimensiones y distribución de los elementos en la
+                        página varíen en función de las dimensiones de la pantalla que está mostrando el contenido.
+                    </p>
+                    <hr>
+                    <p> <b> max-width: 650px;</b><br><b>display: block;</b><br><b>list-style:none;</b><br><b>
+                            margin:auto;</b><br>
+                    </p>
+                </div>
+                <div class="carousel-item uno">
+                    <h5>Flexbox</h5>
+                    <hr>
+                    <p>
+                        <b>¿Qué es flexbox?</b> <br>
+                        es un método de diseño de página unidimensional para compaginar elementos en filas o columnas.
+                        Los elementos de contenido se ensanchan para rellenar el espacio adicional y se encogen para
+                        caber en espacios más pequeños. En este artículo expondremos todas sus características básicas.
+                    </p>
+                    <hr>
+                    <p> <b>Flex contend;</b><br><b>Flex items</b><br><b>cross axis</b><br><b>main axis</b><br>
+                    </p>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
